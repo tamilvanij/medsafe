@@ -125,27 +125,10 @@ curl -X POST http://localhost:5000/api/check \
 | **AI Engine** | OpenAI GPT-4o-mini |
 | **Frontend** | Vanilla JS, CSS3, Inter font |
 | **State Mgmt** | Flask Sessions |
-| **Deployment** | Gunicorn (production-ready) |
 
 ---
 
-## 🌐 Deploy to Production
 
-### Using Gunicorn (Linux/Mac)
-
-```bash
-gunicorn -w 4 -b 0.0.0.0:5000 app:app
-```
-
-### Using Docker
-
-```dockerfile
-FROM python:3.11-slim
-WORKDIR /app
-COPY . .
-RUN pip install -r requirements.txt
-EXPOSE 5000
-CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:5000", "app:app"]
 ```
 
 ---
@@ -156,9 +139,9 @@ MedSafe AI is for **informational purposes only** and does not constitute medica
 
 ---
 
-## 👥 Team
+## 👥 Team TJM Girls
 
-Built for [Hackathon Name] · Healthcare Track · 2024
+Built for Hackfest online Hackathon
 
 ---
 
